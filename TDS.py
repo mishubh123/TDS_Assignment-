@@ -1,15 +1,26 @@
-# Get the three input numbers from the user
-num1 = int(input("Enter the first number: "))
-num2 = int(input("Enter the second number: "))
-num3 = int(input("Enter the third number: "))
+import streamlit as st
 
-# Compare the numbers using if-elif statements
-if num1 >= num2 and num1 >= num3:
-    largest_num = num1
-elif num2 >= num1 and num2 >= num3:
-    largest_num = num2
+st.title("Find the largest among the 3
+numbers")
+
+numl = st.number input("Enter number 1")
+num2 = st.number input ("Enter number 2")
+num3 = st.number input("Enter number 3")
+
+calculate = st.button("Find largest number")
+
+def largest number (a, b, c):
+if a > b and a > c:
+return a
+elif b > a and b > c:
+return b
 else:
-    largest_num = num3
+return c
 
-# Print the largest number
-print("The largest number is:", largest_num)
+if calculate:
+
+largest num = largest number (numl, num2,
+num3)
+
+st.write("The largest number is:",
+largest num)
